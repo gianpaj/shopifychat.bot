@@ -1,0 +1,60 @@
+---
+const features = [
+  {
+    title: 'One-Click Installation',
+    description:
+      'Install ShopBot AI on your Shopify store in seconds with our seamless integration process.',
+    icon: '🚀',
+  },
+  {
+    title: '24/7 Order Support',
+    description:
+      'Automated handling of order tracking, modifications, and refund requests around the clock.',
+    icon: '⏰',
+  },
+  {
+    title: 'Smart Escalation',
+    description:
+      'AI-powered decision making to escalate complex issues to human support when needed.',
+    icon: '🤖',
+  },
+  {
+    title: 'Real-time Updates',
+    description:
+      'Keep customers informed with instant order status updates and tracking information.',
+    icon: '📊',
+  },
+  {
+    title: 'Address Modification',
+    description:
+      'Allow customers to modify shipping addresses automatically within delivery windows.',
+    icon: '📍',
+  },
+  {
+    title: 'Multilingual Support',
+    description:
+      'Communicate with customers in their preferred language with support for multiple languages.',
+    icon: '🌍',
+  },
+];
+---
+
+<section class="bg-dark-light py-20" id="features">
+  <div class="container mx-auto px-4">
+    <h2 class="mb-16 text-center text-4xl font-bold md:text-5xl">
+      <span class="text-primary">Powerful Features</span> for Modern Support
+    </h2>
+
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {
+        features.map((feature) => (
+          <div class="card">
+            <div class="mb-4 text-4xl">{feature.icon}</div>
+            <h3 class="mb-2 text-xl font-bold">{feature.title}</h3>
+            <p class="text-gray-400">{feature.description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

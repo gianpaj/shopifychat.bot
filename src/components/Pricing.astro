@@ -1,0 +1,92 @@
+---
+const plans = [
+  {
+    name: 'Starter',
+    price: 49,
+    features: [
+      'Up to 1,000 orders/month',
+      'Basic order support',
+      'Email notifications',
+      'English support only',
+      'Standard response time',
+      'Basic analytics',
+    ],
+  },
+  {
+    name: 'Pro',
+    price: 149,
+    features: [
+      'Unlimited orders',
+      'Advanced order support',
+      'Real-time notifications',
+      'All languages supported',
+      'Priority response time',
+      'Advanced analytics & reporting',
+      'Custom automation rules',
+      'Dedicated account manager',
+    ],
+    popular: true,
+  },
+];
+---
+
+<section class="py-20" id="pricing">
+  <div class="container mx-auto px-4">
+    <h2 class="mb-16 text-center text-4xl font-bold md:text-5xl">
+      Simple, <span class="text-primary">Transparent</span> Pricing
+    </h2>
+
+    <div class="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
+      {
+        plans.map((plan) => (
+          <div class:list={[
+            'card relative overflow-hidden',
+            plan.popular && 'border-primary/40 bg-dark-light/50',
+          ]}>
+            {plan.popular && (
+              <div class="absolute -right-12 top-6 rotate-45 bg-primary px-12 py-1 text-sm font-semibold text-dark">
+                Popular
+              </div>
+            )}
+            <h3 class="mb-2 text-2xl font-bold">{plan.name}</h3>
+            <div class="mb-6">
+              <span class="text-4xl font-bold">${plan.price}</span>
+              <span class="text-gray-400">/month</span>
+            </div>
+            <ul class="mb-8 space-y-3">
+              {plan.features.map((feature) => (
+                <li class="flex items-center text-gray-300">
+                  <svg
+                    class="mr-2 h-5 w-5 text-primary"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+            <a
+              href="#"
+              class:list={[
+                'block w-full rounded-lg border px-6 py-3 text-center transition-all duration-300',
+                plan.popular
+                  ? 'btn-primary'
+                  : 'border-primary/50 hover:bg-primary/10',
+              ]}
+            >
+              Get Started
+            </a>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

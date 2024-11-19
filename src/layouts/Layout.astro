@@ -1,0 +1,49 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'ShopBot AI - Intelligent Shopify Support Assistant' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body class="bg-dark text-white">
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+    html {
+      font-family: system-ui, sans-serif;
+    }
+  }
+
+  @layer components {
+    .btn-primary {
+      @apply animate-glow rounded-lg bg-primary px-8 py-3 font-bold 
+             text-dark transition-all duration-300 
+             hover:scale-105 hover:bg-opacity-90;
+    }
+
+    .card {
+      @apply rounded-xl border border-primary/20 bg-dark-light p-6 
+             transition-all duration-300 hover:translate-y-[-5px] 
+             hover:border-primary/40;
+    }
+  }
+</style>

@@ -1,0 +1,62 @@
+---
+---
+
+<section class="bg-dark-light py-20" id="demo">
+  <div class="container mx-auto px-4">
+    <h2 class="mb-16 text-center text-4xl font-bold md:text-5xl">
+      See ShopBot AI in <span class="text-primary">Action</span>
+    </h2>
+
+    <div class="mx-auto grid max-w-6xl gap-12 lg:grid-cols-2">
+      <div class="flex items-center">
+        <div>
+          <h3 class="mb-6 text-3xl font-bold">Powerful Dashboard</h3>
+          <p class="mb-8 text-lg text-gray-300">
+            Monitor all customer interactions, track support metrics, and manage automated responses
+            from one central location. Our intuitive dashboard gives you complete control over your
+            customer support operations.
+          </p>
+          <ul class="space-y-4">
+            {
+              ['Real-time analytics', 'Response monitoring', 'Custom automation rules'].map(
+                (feature) => (
+                  <li class="flex items-center text-gray-300">
+                    <svg
+                      class="mr-2 h-5 w-5 text-primary"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    {feature}
+                  </li>
+                )
+              )
+            }
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="aspect-video overflow-hidden rounded-xl border border-primary/20 bg-dark shadow-2xl">
+          <video
+            class="h-full w-full object-cover"
+            poster="/dashboard-preview.jpg"
+            controls
+          >
+            <source src="/demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="absolute -bottom-6 -left-6 -right-6 -top-6 -z-10 rounded-xl bg-primary/10 blur-xl">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
