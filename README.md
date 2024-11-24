@@ -1,54 +1,104 @@
-# Astro Starter Kit: Basics
+# ShopifyChat.bot 🤖
 
-```sh
-npm create astro@latest -- --template basics
+> Landing Page for ShopifyChat.bot
+
+A powerful AI-powered support assistant that seamlessly integrates with your Shopify store to provide 24/7 automated customer support.
+
+![ShopifyChat.bot Banner](link-to-your-banner-image)
+
+## 🚀 Features
+
+- **One-Click Installation**: Get up and running in seconds with our seamless Shopify integration
+- **24/7 Automated Support**: Handle customer inquiries automatically around the clock
+- **Intelligent Order Management**:
+  - Real-time order tracking
+  - Order modifications
+  - Refund requests
+  - Address changes
+- **Smart Human Escalation**: AI knows when to pass complex queries to your support team
+- **Multilingual Support**: Serve customers in multiple languages including:
+  - English
+  - Spanish
+  - Ukrainian
+  - And more...
+- **Performance Impact**: Reduces support workload by up to 80%
+
+## ⚡️ Quick Start
+
+1. Visit [ShopifyChat.bot](https://shopifychat.bot)
+2. Click "Install Now"
+3. Authorize the app in your Shopify store
+4. Done! The chatbot is now live on your store
+
+## 🛠 Tech Stack for the Landing Page
+
+- [Astro](https://astro.build/) - Static Site Generator
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/gianpaj/shopifychat-bot.git
+
+# Navigate to project directory
+cd shopifychat-bot
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 💻 Development
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+```bash
+# Run development server
+npm run dev
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+# Build for production
+npm run build
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+# Preview production build
+npm run preview
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+<!-- ## 📄 Documentation
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+For detailed documentation, visit our [Documentation Portal](link-to-docs). -->
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 🤝 Support
 
-## 🧞 Commands
+- Email: support@shopifychat.bot
+- [GitHub Issues](https://github.com/gianpaj/shopifychat.bot/issues)
 
-All commands are run from the root of the project, from a terminal:
+## 📈 Performance Metrics
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- Average response time: < 1 second
+- Resolution rate: 90%
+<!--- Customer satisfaction: 4.8/5-->
+- Support workload reduction: 80%
 
-## 👀 Want to learn more?
+## 🔒 Security
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+<!--- - SOC 2 Compliant-->
+- GDPR Compliant
+- Regular security audits
+- Encrypted data transmission
+
+<!--
+## 📝 License
+
+[MIT](LICENSE)
+
+## 🙋‍♂️ Contributing
+
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details. -->
+
+---
+
+Made with ❤️ by the Gianfranco P.
+
+[Website](https://shopifychat.bot) • [X/Twitter](https://x.com/gianpaj) • [LinkedIn](https://linkedin.com/in/gianpaj)
