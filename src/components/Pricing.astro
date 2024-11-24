@@ -39,10 +39,12 @@ const plans = [
     <div class="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
       {
         plans.map((plan) => (
-          <div class:list={[
-            'card relative overflow-hidden',
-            plan.popular && 'border-primary/40 bg-dark-light/50',
-          ]}>
+          <div
+            class:list={[
+              'card relative overflow-hidden',
+              plan.popular && 'border-primary/40 bg-dark-light/50',
+            ]}
+          >
             {plan.popular && (
               <div class="absolute -right-12 top-6 rotate-45 bg-primary px-12 py-1 text-sm font-semibold text-dark">
                 Popular
@@ -77,9 +79,7 @@ const plans = [
               href="#"
               class:list={[
                 'block w-full rounded-lg border px-6 py-3 text-center transition-all duration-300',
-                plan.popular
-                  ? 'btn-primary'
-                  : 'border-primary/50 hover:bg-primary/10',
+                plan.popular ? 'btn-primary' : 'border-primary/50 hover:bg-primary/10',
               ]}
             >
               Get Started

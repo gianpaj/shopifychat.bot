@@ -4,7 +4,8 @@ interface Props {
   description?: string;
 }
 
-const { title, description = 'ShopBot AI - Intelligent Shopify Support Assistant' } = Astro.props;
+const { title, description = 'ShopifyBot.ai - Intelligent Shopify Support Assistant' } =
+  Astro.props;
 ---
 
 <!doctype html>
@@ -35,14 +36,14 @@ const { title, description = 'ShopBot AI - Intelligent Shopify Support Assistant
 
   @layer components {
     .btn-primary {
-      @apply animate-glow rounded-lg bg-primary px-8 py-3 font-bold 
-             text-dark transition-all duration-300 
+      @apply animate-glow rounded-lg bg-primary px-8 py-3 font-bold
+             text-dark transition-all duration-300
              hover:scale-105 hover:bg-opacity-90;
     }
 
     .card {
-      @apply rounded-xl border border-primary/20 bg-dark-light p-6 
-             transition-all duration-300 hover:translate-y-[-5px] 
+      @apply rounded-xl border border-primary/20 bg-dark-light p-6
+             transition-all duration-300 hover:translate-y-[-5px]
              hover:border-primary/40;
     }
   }
